@@ -1,7 +1,7 @@
-
 #include "main.h"
 void DisplayBoard(char board[][8])
 {
+	system("cls");
 	int rows = 8, columns = 8, i, ix;
 	cout<<"  1 2 3 4 5 6 7 8\n";
 	for(i = 0; i < rows; i++)
