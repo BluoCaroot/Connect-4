@@ -1,5 +1,6 @@
 *.sln
 *.swp
+*.exe
 x64
 connect 4
 .vs
