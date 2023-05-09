@@ -1,0 +1,5 @@
+*.sln
+*.swp
+x64
+connect 4
+.vs
