@@ -4,8 +4,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-
 bool check_win(vector<int>v);
-bool check_input(int x);
+bool check_input(int position);
 void DisplayBoard(char board[][8]);
 #endif
