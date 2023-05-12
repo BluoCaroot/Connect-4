@@ -49,7 +49,7 @@ int main()
 				cin >> c;
 				while (tolower(c) != 'y' || tolower(c) != 'n')
 				{
-					cout >> "Please enter a valid input\n";
+					cout << "Please enter a valid input\n";
 					cin >> c;
 				}
 				if (tolower(c) == 'y')
