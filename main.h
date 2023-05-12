@@ -2,9 +2,11 @@
 #define MAIN_H
 
 #include <iostream>
-#include <vector>
+
 using namespace std;
-bool check_win(vector<int>v);
-bool check_input(int position);
+int check_win(char board[][8]);
+int check_input(int position, char board[][8]);
+void process_input(int position, char board[][8], bool player);
 void DisplayBoard(char board[][8]);
+void Ai(char board[][8]);
 #endif
