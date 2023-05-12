@@ -1,10 +1,10 @@
 #include "main.h"
-bool check_input(int position)
+int check_input(int position, char board[][8])
 {
     if(position <=0 || position > 8)
-        return false;
+        return 1;
     else if(board[0][position - 1] == 'X' || board[0][position - 1] == 'O')
-        return false;
+        return 2;
 
-    return true;
+    return 0;
 }
