@@ -3,16 +3,16 @@
 #define ll long long
 #define fast  ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
 using namespace std;
-char iswinning(char arr[8][8]) {
+int chek_win(char board[8][8]) {
     for (int i = 0; i < 8; ++i) {
         // row
         char c;
         for (int j = 0; j <8; ++j) {
-            if (arr[i][j] == 'X' || arr[i][j] == 'O') {
-                c = arr[i][j];
+            if (board[i][j] == 'X' || board[i][j] == 'O') {
+                c = board[i][j];
                 int one = 1;
                 for (int k =j; k < 8; ++k) {
-                    if (arr[j][k + 1] == c) {
+                    if (board[j][k + 1] == c) {
                         one++;
                     }
                     else
@@ -32,7 +32,7 @@ char iswinning(char arr[8][8]) {
                 {
                      one = 1;
                     for (int f = j; f < 8; ++f) {
-                        if (arr[f][j] == c) 
+                        if (board[f][j] == c) 
                             one++;
                         
                         else 
@@ -51,7 +51,7 @@ char iswinning(char arr[8][8]) {
                     {
                         one=0=1;
                         for (int g= 0; g < 8; ++g) {
-                            if (arr[g][g] == c)
+                            if (board[g][g] == c)
                                 one++;
                             else
                                 break;
