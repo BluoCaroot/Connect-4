@@ -1,9 +1,6 @@
-﻿// Asmaa Elsayed //
-#include <bits/stdc++.h>
-#define ll long long
-#define fast  ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
-using namespace std;
-int chek_win(char board[8][8]) {
+﻿#include "main.h"
+int chek_win(char board[8][8]) 
+{
     for (int i = 0; i < 8; ++i) {
         // row
         char c;
@@ -49,7 +46,7 @@ int chek_win(char board[8][8]) {
                     }//diagonal
                     else
                     {
-                        one=0=1;
+                        one=0;
                         for (int g= 0; g < 8; ++g) {
                             if (board[g][g] == c)
                                 one++;
@@ -65,16 +62,8 @@ int chek_win(char board[8][8]) {
                             return c;
                         }
                     }
-
                 }
             }
         }
-
     }
-   
-
-int main() {
-   
-
-    return 0;
 }
