@@ -11,11 +11,13 @@ void DisplayBoard(char board[][8])
 		{
 			if(board[i][ix] != 'X' && board[i][ix] != 'O')
 				board[i][ix] = '*';
-
+			if(board[i][ix]=='X')cl(12);
+			else if(board[i][ix]=='O')cl(14);
+			else cl(3);
 			cout << board[i][ix]<<" ";
 			
 		}
-
+		cl(7);
 		cout << "|" << endl;
 	}
 }
